@@ -36,11 +36,34 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding-top: 10px;
     padding-bottom: 10px;
+    border-right: 2px solid white;
+    animation-name: raning;
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-fill-mode: none;
+    animation-direction: normala;
+    overflow: hidden;
+    width: 0%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 
+@keyframes raning {
+
+    0% {
+        width: 0%;
+
+    }
+
+    50% {
+        width: 35%;
+    }
 }
 
 .headerheading:hover {
     text-shadow: goldenrod 0px 0px 50px;
+    /* text-shadow: 2px 2px 5px red; */
 }
 
 .headerimg {
@@ -54,6 +77,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.container5 {
+    height: 50px;
+    width: 50px;
 }
 
 .box {
@@ -80,7 +108,7 @@
         /* transform: rotateX('angle'); */
         /* transform: perspective(30deg); */
         /* transform: rotate(240deg); */
-        border-color: orange;
+        /* border-color: orange; */
     }
 
     25% {
@@ -119,9 +147,10 @@
 
 }
 
-.box i {
-    font-size: 35px;
+
+i {
     color: white;
+    font-size: 50px;
 }
 
 .hiden {
@@ -137,18 +166,52 @@
 
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:500px)and (min-width:200px) {
     .hide {
         display: none;
     }
 
     .hiden {
         display: contents;
-        margin-left: 280px;
+        /* margin-left: 200px; */
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        text-align: center;
+        padding-left: 250px;
+    }
+
+    .headerheading {
+        font-size: 25px;
+        font-weight: bold;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-right: 2px solid white;
+        animation-name: raning;
+        animation-duration: 10s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-play-state: running;
+        animation-fill-mode: none;
+        animation-direction: normala;
+        overflow: hidden;
+        width: 0%;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    }
+
+    @keyframes raning {
+
+        0% {
+            width: 0%;
+
+        }
+
+        50% {
+            width: 22%;
+        }
     }
 
 }
